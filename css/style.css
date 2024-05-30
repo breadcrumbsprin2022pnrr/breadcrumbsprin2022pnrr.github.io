@@ -1,0 +1,85 @@
+body {
+      padding-top: 56px; /* Adjusted for fixed navbar */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+footer{
+    padding: 100px;
+    background-color: #ff9f1c;
+    color:white;
+}
+
+nav{
+    background-color: #ff9f1c;
+}
+
+.subtitle-logo{
+    font-size: 21px;
+    font-weight:600;
+}
+
+#coordinators {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#partners{
+    background-color: #f48c06;
+}
+
+#eu {
+    max-width: 250px;
+    height: auto;
+}
+
+#logo-main{
+    max-width: 900px;
+    height: auto;
+}
+
+#bibliography{
+    font-family: monospace;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 100px;
+}
+
+#detailed-project-last{
+    margin-bottom: 100px;
+}
+
+.university-card {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.university-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.university-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.university-info h4 {
+  margin-bottom: 0;
+}
+
+#unipg-con, #unifi-con, #polito-con{
+    max-width: 250px;
+    height: auto;
+}
+
+#universities-involved, #university{
+    margin-bottom: 150px;
+}
+
+#list-of-publication{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}

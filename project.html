@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Breadcrumbs</title>
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo_long.png" alt="BREADCRUMBS" height="30" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="consortium.html">Consortium</a></li>
+          <li class="nav-item"><a class="nav-link" href="dissemination.html">Dissemination</a></li>
+          <li class="nav-item"><a class="nav-link" href="WP.html">Milestones</a></li>
+          <li class="nav-item"><a class="nav-link" href="manage.html">Management</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+<section id="partners" class="bg-light py-5">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Replace these placeholder logos with actual partner logos -->
+      <div class="col-md-4 d-flex align-items-center"><img src="img/finanziato_eu_low-bianco.png" alt="EU" class="img-fluid mx-auto" id="eu"></div>
+      <div class="col-md-4 d-flex align-items-center"><img src="img/mur_low-bianco.png" alt="MUR" class="img-fluid mx-auto" id="eu"></div>
+      <div class="col-md-4 d-flex align-items-center"><img src="img/italia-domani-logo-low-bianco.png" alt="RESILIENZA" class="img-fluid mx-auto" id="eu"></div>
+    </div>
+  </div>
+</section>
+
+<!-- State-of-Art Section -->
+<section id="state-of-art" class="py-5">
+  <div class="container text-center">
+    <h2>State of the art</h2>
+    <p class="text-left">Nowadays, Unmanned Aerial Vehicles (UAVs) or drones, or more generally Unmanned Aerial Systems (UAS), are increasingly used in
+        many applications and they are invoked for driving the Advanced Air Mobility (AAM) and the Urban Air Mobility (UAM). AAM
+        encompasses the emerging aviation markets to safely develop an Air Transportation System (ATS) that moves people and cargo
+    between places previously not served or underserved by aviation. The emerging activities in AAM are passenger and goods
+    transportation, images and data collection, and traffic monitoring. UAM is a subset of AAM that uses small and automated aircraft to
+    work at low altitudes in urban and suburban areas. So far, only manned/unmanned ground and manned aerial vehicles have been
+    employed in these markets. Trucks are constrained by the terrain and suffer from highly congested infrastructures, while the use of
+    planes is costly and unaffordable for most people. Hence, the use of UAS is a viable solution in many applications also because
+    they do not emit greenhouse gas.
+    <br>
+    <br>
+    In the EU, the operativity of UAS is subdivided into 3 categories: Open, Specific, and Certified. The operations in Open present a
+    low risk and do not require a prior authorization before the flights. These operations must be done in Visual Line of Sight (VLoS), at
+    low altitudes. The Specific category presents a medium risk indicating operations where one or more elements fall outside of the
+    Open category. If authorized, these can be performed Beyond Visual Line of Sight (BVLoS). The Certified category concerns missions
+    with a high risk, such as the transport of dangerous goods, operations in overcrowded areas, or the transport of people. So,
+    excluding the Open operativity which is fully regulated and implemented, and the Certified one which is not defined yet, the
+    operativity of UAS in Specific is currently in a state of “limbo” susceptible to be now updated.
+    <br>
+    <br>
+    To enable Specific operativity, in the EU there are currently 3 ways, i.e., by a NOtice To AirMen (NOTAM) authorization, by
+    Extended Visual Line of Sight (EVLoS) flights, or by the exploitation of “corridors” or “polygons”. A NOTAM isolates a certain area,
+    and the risk is lowered because only the authorized UAV operation can use that area. However, it is not a flexible tool since it must
+    be requested several days in advance, and it is unsuitable for a massive drone use. An EVLoS flight emulates a
+    BVLoS flight by exploiting additional operators. The original UAV operator seamlessly passes the control to other operators that
+    continue observing the UAV in VLoS. However, an ad-hoc “human” infrastructure is still necessary to be deployed, and special
+    permissions are required too. Finally, the exploitation of “corridors” (e.g., high-voltage transmission lines) or “polygons” (e.g., closed
+    fields), is the solution closest to BVLoS flights in a low risk scenario, but it lacks generality. Here, multiple UAVs are in charge of a
+    portion of the area having their own smart docking station where to recharge and to send back information.
+    <br>
+    <br>
+    To pursue flexible and scalable BVLoS flights, there are two big challenges: risk and remote control of the drone. The technology that
+    controls the UAV must be aware of the level of ground and air risk. The ground risk depends on the concentration of people over
+    places in case of some malfunctioning. The presence of buildings, towers, and trees can slightly mitigate the ground risk since
+    they can act as shields or shelters, but they also represent obstacles during the flight. The air risk is coupled with possible
+    crashes with other manned/unmanned objects that occupy the air space. The air risks seriously increase with the presence of
+    malicious vehicles (ground or aerial) whose goal is to compromise the security of the flights.
+    Concerning the remote control, a UAV must communicate its position anytime so that its route can be monitored by the ground, and
+    possibly modified by providing new tasks while getting real time updates from the UAV. Establishing reliable BVLoS links supported
+    by some communications infrastructure is the so called connectivity challenge. Since thinking of deploying an ad-hoc
+    infrastructure for communicating is not sustainable, it is realistic to rely on already available ones like those used for ground users
+    (cellular). There are several generations of networks already deployed (e.g., 4/5G) that can provide BVLoS links with different
+    characteristics (e.g., bandwidth, latency) suitable for different types of UAVs, and types of applications.
+    <br>
+    <br>
+    To sum up, the risk and connectivity are the two challenges to consider and to integrate when routing the UAVs in Specific BVLoS
+    missions. The risk has to be assessed while defining the UAV trajectory, which is feasible only if the UAV is under constant radio
+    control.
+    </p>
+  </div>
+</section>
+
+<!--Detailed Project Section -->
+<section id="detailed-project" class="py-5">
+  <div class="container text-center">
+    <h2>Project impact</h2>
+    <p class="text-left">
+        The use of UAVs continues to grow and evolve globally. The technology has proven to provide many technological, social, and
+industrial benefits enabling the Urban Air Mobility (UAM) concept and helping the decarbonization of the territory. For example, UAVs
+can be used as a critical tool to support numerous use cases and public safety efforts. These include, e.g., inspections of critical
+infrastructure, smart agriculture, and operations involving the delivery of supplies and packages to consumers. Unfortunately, the
+use of drones is still confined to the Visual Line of Sight (VLoS) scenario, and nevertheless, both the research and industry
+communities are continuously pushing and putting money towards this emerging technology. Therefore, to unlock the full economic
+potential of commercial drone operations (as well as scientific and other civilian utilization), flights must be operated Beyond Visual
+Line of Sight (BVLoS). This will allow drones to simply accomplish more in a single flight and ultimately allow operators to benefit
+from long-distance drone operation, providing maximum cost-effectiveness.
+<br><br>
+One of the first applications that would be fundamental by enabling the BVLoS flight is the delivery of sanitary goods, such as blood
+or organs, in time-critical emergency applications. Just imagine a situation where a patient is waiting for an urgent transplant, and
+the ambulance that carries the required stuff is stuck on the highway due to a heavy traffic jam. Therefore, it would be extremely
+crucial to deliver the sanitary goods in time, by using a UAV flying BVLoS, because every additional lost minute can be detrimental to
+the patient. Once the transportation of sanitary goods will be consolidated and accepted by the industrial community, other
+subsequent delivery drone-based applications can be enabled accordingly, e.g., the delivery of small packages containing
+lightweight items, such as food and beverages. What we are envisioning is not so unrealistic since now other administrations,
+organizations, and companies are arguing that a public transportation system fully relying on unmanned vehicles (such as large
+copters) could be realized in a not too far future from today. This goes towards the spirit of a sustainable environment with no
+greenhouse gas emissions and renewable sources. So, we firmly believe that our project will guarantee immediate benefits and a
+broad impact in the mid-long term.
+    </p>
+  </div>
+</section>
+
+<section id="detailed-project" class="py-5">
+  <div class="container text-center">
+    <h2>Knowledge improvements</h2>
+    <p class="text-left">
+        The use of UAVs continues to grow and evolve globally. The technology has proven to provide many technological, social, and
+industrial benefits enabling the Urban Air Mobility (UAM) concept and helping the decarbonization of the territory. For example, UAVs
+can be used as a critical tool to support numerous use cases and public safety efforts. These include, e.g., inspections of critical
+infrastructure, smart agriculture, and operations involving the delivery of supplies and packages to consumers. Unfortunately, the
+use of drones is still confined to the Visual Line of Sight (VLoS) scenario, and nevertheless, both the research and industry
+communities are continuously pushing and putting money towards this emerging technology. Therefore, to unlock the full economic
+potential of commercial drone operations (as well as scientific and other civilian utilization), flights must be operated Beyond Visual
+Line of Sight (BVLoS). This will allow drones to simply accomplish more in a single flight and ultimately allow operators to benefit
+from long-distance drone operation, providing maximum cost-effectiveness.
+<br><br>
+One of the first applications that would be fundamental by enabling the BVLoS flight is the delivery of sanitary goods, such as blood
+or organs, in time-critical emergency applications. Just imagine a situation where a patient is waiting for an urgent transplant, and
+the ambulance that carries the required stuff is stuck on the highway due to a heavy traffic jam. Therefore, it would be extremely
+crucial to deliver the sanitary goods in time, by using a UAV flying BVLoS, because every additional lost minute can be detrimental to
+the patient. Once the transportation of sanitary goods will be consolidated and accepted by the industrial community, other
+subsequent delivery drone-based applications can be enabled accordingly, e.g., the delivery of small packages containing
+lightweight items, such as food and beverages. What we are envisioning is not so unrealistic since now other administrations,
+organizations, and companies are arguing that a public transportation system fully relying on unmanned vehicles (such as large
+copters) could be realized in a not too far future from today. This goes towards the spirit of a sustainable environment with no
+greenhouse gas emissions and renewable sources. So, we firmly believe that our project will guarantee immediate benefits and a
+broad impact in the mid-long term.
+<br><br>
+The acquired knowledge concerning the risk awareness, relying on many layers considering different heights and typologies, will
+allow relatively safe flights of drones. We are aware that drones can have failures, and it is impossible to guarantee 100% safety
+when we talk about vehicles (either ground or aerial ones). However, our investigation will create proper maps which characterize
+the ground risk level so the drones can avoid areas with a higher risk in favor of other ones much less hazardous. These maps can be
+also exploited by any VLoS/BVLoS application since the UAVs can suffer from failures anyway (e.g., broken propeller). Interestingly,
+even other applications that make use of manned aerial applications could rely on these maps, such as search and rescue operations
+after disastrous events, monitoring of traffic jams, and so on. Technological innovation and industrial application In order to
+guarantee an efficient, reliable, safe, and secure BVLoS flight of drones, some new technologies are required to be implemented on
+current commercial drones. Indeed, since this kind of flight is not permitted yet, drone manufacturers did/do not expect to equip
+their UAVs with the suitable onboard technology that would allow them to fly BVLoS. To this end, the new drones should be equipped
+with additional capabilities in order to fly without the direct intervention of the ground control station (GCS) or the remote controller.
+Therefore, the new commercial UAVs must have slots for SIM cards for being connected to the Internet. The manufacturers should
+consider different radio bands for the connection capability in order to guarantee that the UAV operativity can work in any country
+(since different countries can have different usage of bands). To further extend the connectivity, the drones should be possibly
+equipped with special connectors able to establish satellite connections. However, the cost for data transmissions (particularly
+broadband data) is currently high at the moment, and hence, due to the expected and massive employment of drones with satellite
+capabilities, such a cost will decrease accordingly.
+<br><br>
+Concerning the basic risk awareness of drones, it can be created with a suitable and large set of onboard sensors that can perceive
+and detect possible risks in the surroundings. At the moment, only the most expensive drones are equipped with proximity sensors,
+cameras, and wind sensors, altogether able to detect real-time hazards. Indeed, mid- and low-cost drones only have a limited set of
+sensors (if nothing), and they could not be employed for a safe flight. Hence, the industrial community must equip all their UAVs with
+new enhanced sensors. Parallelly, the flight controller of drones should combine the information gathered by these sensors and
+make opportune decisions during a BVLoS flight in case of exceptional events, e.g., an unexpected obstacle close to drones,
+unforeseen drainage of the batteries, and so on. In other words, the new flight controllers should be suitably trained with some form
+of artificial intelligence. Moreover, we will create a shared access point for the UAV operators which includes all the risk maps of
+different layers, made available as a web service. These maps, constantly updated, can be consulted by the operators in a real-time
+manner, making then the BVLoS trajectories much safer.
+    </p>
+  </div>
+</section>
+
+
+<section id="detailed-project" class="py-5">
+  <div class="container text-center">
+    <h2>Scientific community reinforcement</h2>
+    <p class="text-left">
+        UNIPG, as the leading RU of this project, thanks to the long-term and fruitful collaboration with the Missouri University of Science &
+Technology (S&T), USA, will eventually create a bridge for evaluating the possibility of using drones in a BVLoS scenario. As for Nov
+2022, the current regulation concerning the BVLoS flight of drones in the US is a little bit ahead with respect to what is happening in
+the UE. Therefore, we plan to, if possible, interact more and more with colleagues from the Computer Science and Engineering Dept
+with the goal to do preliminary experiments by using real drones in a confined scenario. To this end, we will encourage exchange
+periods during and after the existence of the project among this consortium and Missouri S&T. Other contacts will be established
+with other research projects in which RUs are involved, and research communities and interest groups for promoting community
+building. In particular, the project will create synergies with researchers from the HALY.ID project (UNIPG), which established a
+collaboration for the use of two drones (DJI Matrice 300 and Mini 3 Pro), and from ADVANCE H2020 MSCA project (UNIFI), which
+established a collaboration network on safety and dependability evaluation and assessment.
+
+    </p>
+  </div>
+</section>
+
+<section id="detailed-project" class="py-5">
+  <div class="container text-center">
+    <h2>Dissemination</h2>
+    <p class="text-left">
+        The production of research publications will be targeted throughout the whole project. We expect a productive scientific
+dissemination, which can be quantified in 6 top-rank journal papers and 6 conference papers (on average, 3 journal and 3
+conference papers per year). Additionally, at least 2 journal publications and 2 conference publications will be co-authored by ALL
+the RUs, which describes the proposed approach as a cohesive work, where all RUs have a fundamental role in its success. At least
+green open access will be provided to all scientific publications, or gold open access when funds are available. Scientific venues
+sponsored by international technical societies (IEEE, ACM) will be targeted. Target top-rank conferences are: IEEE Intl. Conf. on
+Dependable Systems and Networks (DSN), Intl. Symp. on Reliable Distributed Systems (SRDS), IEEE Intl. Conf. on Computer
+Communications (INFOCOM), IEEE Intl. Conf. on Pervasive Computing and Communications (PerCom), ACM Intl. Conf. on Modeling,
+Analysis and Simulation of Wireless and Mobile Systems (MSWiM). Target journals are IEEE and ACM Transactions, including: ACM
+Trans. on Cyber-Physical Systems, IEEE Trans. on Dependable and Secure Computing, IEEE/ACM Trans. on Networking, IEEE Trans.
+on Network and Service Management, IEEE Trans. on Wireless Communications, IEEE Trans. on Green Communications and
+Networking. To promote the dissemination of results to the community, 2 dissemination events will be organized, in the form of
+workshops co-located in top conferences among those previously cited.
+<br><br>
+Data and software. All software prototypes and data will be public with open licenses through GitHub and Zenodo. Data will be
+managed following the European guidelines on Open Science to maximize the impact and diffusion of the knowledge generated by
+the project, e.g., using methodologies for collecting, storing, and sharing data according to the Findable, Accessible, Interoperable,
+Reusable (FAIR) principles.
+Communication. For communication with the general public, a website will be set up, and communication through social media (e.g.,
+LinkedIn and Twitter) will be performed, by exploiting the communication channels available at our institutions.
+Teaching and training. The project will leverage synergies with several ongoing educational activities. UNIPG will include project
+results in courses related to “Algorithms and data structures”, UNIFI to “Dependable and secure systems” courses, and POLITO to
+“Communication and network systems” courses, all at the MSc/Ph.D. level.
+    </p>
+  </div>
+</section>
+
+
+<section id="detailed-project-last" class="py-5">
+  <div class="container text-center">
+    <h2>Exploitation</h2>
+    <p class="text-left">
+        Each RU commits to making available to the others all the required background knowledge, including software code and data. Each
+RU owns the foreground knowledge it produced; knowledge produced by more RUs is jointly owned by them. RUs commit to making
+the foreground knowledge public. If prospective patenting is envisioned, all RUs commit to delay public dissemination on the subject
+until the patent is submitted, but for a maximum of 4 months after the identification of the patentable contribution. In case of
+exploitation potential, the RUs will refer to the technology transfer offices available at their institution for advice and for the
+necessary support to define an appropriate business plan and course of action.
+    </p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-3 fixed-bottom">
+  <p><b>&copy; 2024 BREADCRUMBS - Building up Robust and Efficient routing Algorithms for Drones by integrating Connectivity and Risk awareness in a
+Urban air Mobility Bvlos Scenario. All rights reserved.</b></p>
+</footer>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap functionality) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

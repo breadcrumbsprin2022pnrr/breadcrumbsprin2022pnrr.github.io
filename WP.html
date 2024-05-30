@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Breadcrumbs</title>
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo_long.png" alt="BREADCRUMBS" height="30" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="consortium.html">Consortium</a></li>
+          <li class="nav-item"><a class="nav-link" href="dissemination.html">Dissemination</a></li>
+          <li class="nav-item"><a class="nav-link" href="WP.html">Milestones</a></li>
+          <li class="nav-item"><a class="nav-link" href="manage.html">Management</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+<section id="partners" class="bg-light py-5">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Replace these placeholder logos with actual partner logos -->
+      <div class="col-md-4 d-flex align-items-center"><img src="img/finanziato_eu_low-bianco.png" alt="EU" class="img-fluid mx-auto" id="eu"></div>
+      <div class="col-md-4 d-flex align-items-center"><img src="img/mur_low-bianco.png" alt="MUR" class="img-fluid mx-auto" id="eu"></div>
+      <div class="col-md-4 d-flex align-items-center"><img src="img/italia-domani-logo-low-bianco.png" alt="RESILIENZA" class="img-fluid mx-auto" id="eu"></div>
+    </div>
+  </div>
+</section>
+
+
+<!--Detailed Project Section -->
+<section id="detailed-project" class="py-5">
+  <div class="container text-center">
+    <h2>Detailed description of the project</h2>
+    <br>
+    <br>
+    <h3>Research objectives</h3>
+    <p class="text-left">
+        In this project, we focus our investigation on Urban Air Mobility (UAM). We consider missions in the Specific category with the
+    additional low-altitude constraint enforced by the Open category (i.e., within 120 m) ignoring the manned-unmanned risk. We
+    concentrate our attention on two types of missions: i) suburban missions: UAVs fly in areas loosely populated for collecting
+    images/data or for performing aerial work such as pest monitoring or data collection on orchards, or monitoring natural
+    or artificial corridors like rivers, electricity, and gas pipelines; and ii) urban missions: UAVs fly in cluttered areas, medium or highly
+    populated, for structural health monitoring of buildings, traffic monitoring on train railways and highways, and delivery of food
+    and beverage, small parcel mails, or biomedical goods. Reliable BVLoS links are thought to extend the operative radius of the UAV
+    service in both types of missions, which have a different level of risk: the suburban missions have generally negligible air and ground
+    risk, while the urban missions face much higher air and ground risks. For our scope, we need novel enabling technologies to
+    implement a robust BVLoS flight that guarantees a degree of connectivity and incorporates a risk tolerance at a proper level,
+    commensurate with the offered service.
+    </p>
+    <br>
+    <br>
+    <img src="img/big_picture.png" alt="scenario" class="img-fluid mb-3" id="scenario-main">
+    <br>
+    <br>
+    <p class="text-left">
+    The connectivity is needed to control the UAV beyond the horizon of the operator’s vision and beyond the Ground Control Station’s
+    (GCS) transmission range. We are not thinking of creating an ad-hoc infrastructure for letting the UAVs fly in BVLoS because it would
+    have a negative environmental impact, and would be extremely costly.
+    Therefore, we aim to exploit the available wireless communication technology used for other common purposes, like the cellular infrastructure that is regularly used
+    by billions of Internet of Things (IoT) devices.
+    In case a singular cellular infrastructure does not fully cover the entire aerial space (nor to certify
+    the coverage in certain areas), we plan to rely on a secondary (redundant) technology (as a backup), such as the satellite
+    infrastructure. Since these communication infrastructures (cellular and satellite) comprise different generations of technologies, each
+    of them with different coverage, bandwidth, reliability, latency, and so on, our objective is to deal with these similar but
+    heterogeneous technologies/interfaces in order to guarantee a seamless BVLoS flight of UAVs. Nevertheless, there are other
+    challenges to be addressed when studying connectivity. In fact, since the UAVs will be equipped with many additional wireless
+    transceivers increasing their weight and CPU burden, the flight time will be negatively affected. Moreover, even if the ground
+    infrastructure is potentially suitable for the UAVs, current exceptional events can cause a saturation of the network, and hence
+    increase latency or, even worse, possible BVLoS links disruptions. To this end, we propose a robust connectivity analysis by taking
+    into account the communication channel quality and the required constraints.
+    <br>
+    <br>
+    The risk awareness helps the UAVs to be aware in advance of the possible ground and air risks. So, our goal is to build the UAV risk
+    awareness by merging real-time information with the information stored in ground and air maps, static or dynamic. It will be of
+    different levels by relying on onboard sensors and on the UAV control technology. The onboard risk awareness is implemented
+    by equipping the UAVs with a set of visual and proximity sensors so that they can measure and estimate in real-time the distance
+    between any object in the surrounding area. It can be also enhanced with the feedback provided by possible additional cameras
+    (e.g., RGB, thermal). The UAV control technology, instead, leveraging on ground maps, limits the risks of the UAV flight. For instance,
+    it can inform the UAV well in advance, with respect to the onboard sensors, about the presence of static obstacles, no-fly zones, and
+    so on. The maps that describe and constrain specific areas on the ground/air can be retrieved from many providers such as
+    OpenStreetMap or D-Flight. The content of the maps can be queried by the control infrastructures to guide the UAV during
+    the flight. We also propose an advanced risk awareness by considering the dynamic aspects of the environment, possibly requiring
+    communications from different entities operating in the environment during the UAV flight.
+    <br><br>
+    So, the important objectives to be pursued in this project are the implementation of seamless, efficient, and reliable BVLoS links, and
+    the creation of a model that properly builds the risk awareness for the UAV by extracting data from the onboard sensors, and from
+    the information provided by the UAV control technology.
+    <br><br>
+    In the following, we describe how we intend to split our project into milestones (MLs), tasks (Ts), and deliverables (Ds). ML1 concerns
+    general activities that span the whole project, while ML2 investigates the preliminary BVLoS in suburban missions in order to lay the
+    foundations for the subsequent and more challenging BVLoS in urban missions (ML3). POLITO will address concerns about the
+    connectivity required during the flight (i.e., communication channel quality, constraints, and strategies for optimizing the QoS), UNIFI
+    will study the possible risks that can occur to UAVs (i.e., safety risk assessment process and security and safety robustness UAV
+    system evaluation), and finally, UNIPG will devise efficient routing and scheduling algorithms taking into account both the
+    connectivity and the risk assessment, possibly extended to multiple UAVs.
+    </p>
+    <br>
+    <br>
+    <h3>ML1: General Activities</h3>
+    <p class="text-left">
+    This milestone, which spans the whole project, is used to describe general activities that will support the core of our research, such
+    as the study of the state-of-the-art, implementation and evaluation, and management, dissemination, and exploitation.
+    </p>
+    <br><br>
+    <h4>T1.1 – [UNIPG, UNIFI, POLITO; B1-B2, B6-B7] State-of-the-art analysis and requirements</h4>
+    <p class="text-left">
+    This task will start to analyze the current state-of-the-art. All the RUs will do this task in order to build the required knowledge for the
+    next milestones/activities. Concerning the communications, for each type of available network (different generations of cellular
+    communications), we will analyze its range, distribution, bandwidth, latency, energy, and overhead cost. We will also analyze
+    satellite communications in the case that both cellular and satellite infrastructures will be jointly used. As for
+    the risk model, we will revise the literature on ground and air risk. For example, we must revise how the risks are assessed, how the
+    ground information is freely available, and how malicious devices can somehow deceive UAVs during a BVLoS flight. Finally,
+    concerning the routing of drones, we should investigate the key parameters to be optimized during the flight (energy, overhead,
+    quality of the signal).
+    For each area of the project (communications, risks, and routing), at the end of this task, we will propose a set of key functional
+    requirements for the suburban and urban missions, respectively, that will drive the design of the BVLoS solution proposed by this
+    project.
+    </p>
+    <br><br>
+    <h4>T1.2 – [UNIPG, UNIFI, POLITO; B4-B6, B10-B12] Implementation and evaluation</h4>
+    <p class="text-left">
+    In this task, we implement our proposed methodologies (models, analysis, algorithms), and then evaluate the real effectiveness.
+    Specifically, we consider first the implementation of BVLoS flights in suburban scenarios, and then in the urban scenarios.
+    The algorithms will be designed and evaluated from a theoretical point of view, comparing them against state-of-the-art techniques.
+    We also plan to validate the theoretical results obtained in our research project and the proposed approaches through experiments
+    in simulated and real-world environments. Experiments can raise new conjectures and theoretical questions that may lead to further
+    theoretical improvements and eventually to more solutions. All the RUs will do this task. Initially, each RU will focus on the
+    implementation/assessment and evaluation of its specific area, and then we expect to convey our findings in order to evaluate the
+    final effectiveness of the whole proposed BVLoS system.
+    </p>
+    <br><br>
+    <h4>T1.3 – [UNIPG, UNIFI, POLITO; B4-B12] Management, dissemination, and exploitation</h4>
+    <p class="text-left">
+    In this task, we plan a suitable management, dissemination, and exploitation scheme. The management will be organized by the
+    lead RU (UNIPG) which will follow up on deliverables and milestones. The lead RU will monitor the progress and identify roadblocks,
+    make sure all deliverables have been met, and finalize the project. The goal is also to cover both scientific dissemination and
+    exploitation of the project’s objectives, adopted approaches, and of obtained results. The effort will be allocated to
+    document demonstrators, research prototypes, and provide open-source code and other supporting materials. A project web space
+    will be created to provide an information point for the work of the project. The project results, research findings, and outcomes will
+    be publicly disseminated through seminar talks, and also published in highly reputable international scientific journals and
+    conferences, possibly under the open-access option. In particular, we expect a productive scientific dissemination,
+    which can be quantified in 6 top-rank journal papers and 6 conference papers (on average, 3 journal and 3 conference papers per
+    year). Additionally, at least 2 journal publications will be co-authored by ALL the RUs, which describes the proposed approach as a
+    cohesive work, where all RUs have a fundamental role in its success. To promote the dissemination of results to the community, two
+    dissemination events will be organized, in the form of workshops, possibly co-located in top conferences.
+    Internally, we will have a joint secure cloud space for several services, i.e., source code repository, storage, web space, and so on.
+    </p>
+    <br><br>
+    <h3>ML2: BVLoS in Suburban Missions</h3>
+    <p class="text-left">
+    In this milestone, our goal is to enable Specific BVLoS suburban missions for collecting images/data or for performing aerial work
+    such as spraying on agriculture, or monitoring natural or artificial corridors like rivers, electricity, and gas pipelines, just to mention a
+    few. In particular, our target will be pursued by: analyzing the link quality and constraints of the suburban scenario and
+    characterizing the relationship between the cellular networks on the ground, and the UAVs (T2.1); analyzing the
+    risk of UAVs by relying on a properly modeled safety risk assessment process (T2.2); and defining the routing parameters to be
+    optimized for an efficient flight that considers both the connectivity and risk assessment processes (T2.3). Eventually, we expect to
+    produce Deliverable D2 that summarizes the activities expected for BVLoS flights in suburban missions describing our findings,
+    results, implementations, and simulation evaluation.
+    </p>
+    <br><br>
+    <h4>T2.1 – [POLITO; B2-B6] Communication channel quality and constraints</h4>
+    <p class="text-left">
+    In this task, we define the communication channel quality and constraints, which is a mandatory step for enabling the BVLoS flight.
+    This will be done by taking into account the existing communication infrastructures, starting from the already available cellular
+    ground infrastructure (i.e., 2/3/4/5G). This infrastructure, mainly optimized for ground users, is basically made by a network of
+    cellular towers whose antennas are placed at a certain height above the ground. Since these antennas are directional and they are pointing towards the ground, the connectivity can be an issue in the air.
+    The investigation consists in defining many types of
+    aspects, starting from the channel quality in terms of key performance indicators like bit rate, and error probability.
+    We also need to
+    study possible additional constraints, like the maximum distance between the transmitter and the receiver, the time to handover,
+    the expected number of handovers per unit of covered distance (which depends on the cell size), and so on.
+    Furthermore, we
+    propose models of the cost (in terms of energy and latency) that characterize possible handovers among intra- and
+    inter-technologies. The selected models will have to be simple in order to be easily incorporated into decision routing algorithms and
+    strategies that will optimize the flight of UAVs. Moreover, we also plan to evaluate possible signal noises caused by the
+    non-obstructed environment at relatively low altitudes (i.e., suburban areas). This is because the current cellular infrastructure has
+    been built for an environment with obstacles. Therefore, since the drones fly over the buildings, there is not any obstruction, and
+    hence the signal-to-noise ratio (SNR) is increased in the nearby towers.
+    </p>
+    <br><br>
+    <h4>T2.2 – [UNIFI; B2-B6] Safety risk assessment process</h4>
+    <p class="text-left">
+    In this task, we provide an adaptable modeling framework for safety analyses, focusing on BVLoS operations, that allows the
+    assurance of operational safety. Hence, we model the accidental faults that involve the UAV itself, including the connectivity
+    disruptions. In particular, as for the UAV failures, key model parameters, like those abstracting the failure rate of a hardware
+    component, are usually meant to be static. In this case, instead, they have to be adapted to a dynamic environment where the
+    environment conditions (e.g., weather, UAV velocity) can influence the failure rate. A hardware component failure impacts the
+    ground risk, while the communication link failure exposes the UAV control to be risky. The key elements of the proposed modeling
+    approach concern its capability to capture the dynamic nature of the system elements that may have an impact on the offered level
+    of safety, and its capability to be applied to a variety of scenarios. The adaptable modeling framework will be based on a preliminary
+    risk assessment process encompassing safety issues. We will first conduct a qualitative analysis for identifying the safety
+    hazards in the system that might lead to catastrophic consequences. Moreover, a quantitative analysis can start to define which
+    failures can be the object of resilient solutions. For example, having an uncontrollable UAV is generally unacceptable, but a
+    connectivity outage can be tolerated by resilient solutions in a suburban environment if it is “short enough”. Traditional risk
+    assessment techniques, like hazard and operability study (HAZOP) or failure mode and effects analysis (FMEA) (i.e., the process of
+    reviewing as many components, assemblies, and subsystems as possible to identify potential failure modes in a system and their
+    causes and effects), will be tailored for being effectively applied to the BVLoS domain.
+    </p>
+    <br><br>
+    <h4>T2.3 – [UNIPG; B2-B6] Routing algorithms for BVLoS in suburban mission</h4>
+    <p class="text-left">
+    In this task, we initially create the system model which is at the basis of our BVLoS scenario. It should take into account both the
+    mobility of the drone and some detailed information about the environment that surrounds the flights. So, we aim to design a
+    system model based on a multi-layer framework in which each layer contains useful data, such as coverage of the communication
+    towers, obstacles, weather maps, rechargeable stations, no-fly zones, and ground risks. Thus, the objective is to devise efficient
+    routing algorithms that allow the UAVs to fly BVLoS in suburban missions by taking into account the connectivity and the risk
+    assessment process. In other words, given a starting and a destination point, we need to determine the “most suitable” BVLoS route
+    such that the UAV can autonomously reach its destination, optimizing metrics that measure and balance sustainability, efficiency,
+    connectivity, and risk. If the time complexity for getting the optimal solutions would be too high, we will target sub-optimal but faster
+    approximated (and heuristic) solutions. We also plan to take possible countermeasures in the case the UAVs enter “fail-safe mode”,
+    providing a set of “checkpoints” along the route where the drone can land, whenever the self-diagnostic system detects a
+    malfunction, but still within functioning capabilities. To improve the resilience of the connectivity, we can assume drones are forced
+    to be connected to at least two different types of links (e.g., 2G and 5G). Having this redundancy is important in order to always
+    guarantee communications with the drone, although with different network capabilities. Finally, the routing algorithms will be tuned
+    with respect to the application of interest. For instance, if the drone is recording and transmitting a video in livestreaming then it will
+    need to maintain excellent communication at any time, without interfering too much with the other users. Conversely, in package
+    delivery applications, only a few data need to be exchanged with the GCS.
+    </p>
+    <br><br>
+    <h3>ML3: BVLoS in Urban Missions</h3>
+    <p class="text-left">
+    In this milestone, based on the new acquired knowledge, our goal is to investigate the Specific BVLoS urban missions, e.g., for
+    structural health monitoring of buildings, traffic monitoring on highways, monitoring of railway tracks, and delivery of food and
+    beverage, small parcel mail, and biomedical goods, just to mention a few. In particular, our target will be pursued by: developing
+    strategies for optimizing the Quality of Service (QoS) of the communications (T3.1); evaluating the security and safety robustness of
+    the UAV system against accidental and malicious faults (T3.2); and devising advanced UAV routing and scheduling algorithms (T3.3).
+    Eventually, we expect to produce Deliverable D3 that summarizes the activities expected for BVLoS flights in urban missions.
+    </p>
+    <br><br>
+    <h4>T3.1 – [POLITO; B6-B12] Development of strategies for optimizing the QoS</h4>
+    <p class="text-left">
+    In this task, we develop possible strategies for optimizing the QoS provided to the application taking into account the channel quality
+    and the predicted channel quality along the path that the UAV is taking. In fact, a UAV that is flying towards a given destination by
+    accessing different technological solutions can optimize the path selection not only to guarantee continuity of connection but also to
+    maximize the QoS that is required by the applications. In particular, we will consider a few cases as follows: i) in case of elastic and
+    delay tolerant services, the strategy aims at maximizing the available bandwidth along the path that the UAV is taking; ii) in case of
+    multimedia real-time communications, it might be convenient to guarantee an available bandwidth that is as constant as possible
+    and as close as possible to the minimum requested one; iii) in case of energy minimization, for example for IoT applications, the
+    scheduling of the transmissions might take into account the fact that the energy needed to transmit depends on the channel quality
+    and on the selected technology. Another aspect to consider in urban environments is the presence of dense obstacles that can obstruct the signal and therefore limit the connectivity.
+    Recall that a UAV must be connected all the time, with a certain level of requirements, during any BVLoS flight. In fact, in a suburban
+    scenario with a few obstacles, the probability of being radio Line of Sight (LoS) is higher, but in an urban scenario, this probability
+    can significantly decrease due to the presence of buildings or other obstacles. Such a LoS probability highly depends on the angle of
+    incidence among the tower where the UAV is connected with, and the UAV itself, impacting the required QoS.
+    </p>
+    <br><br>
+    <h4>T3.2 – [UNIFI; B6-B12] Security and safety robustness UAV system evaluation</h4>
+    <p class="text-left">
+    In this task, we consider security and safety issues with
+    the most stringent constraints because the environment on the ground is dense and highly populated, and the buildings form a
+    cluttered environment. All the previous concerns addressed in T2.2 are present here, and the models have to be adapted to the
+    cluttered environment. In addition, the complicated and uncontrolled environments, the different wireless communication channels,
+    and the lack of security standards for UAVs make the Unmanned Aerial System (UAS) vulnerable to attack. UAVs/UAS are a kind of
+    cyber-physical system (CPS) containing multiple components like sensors, communications, computation, and control modules, so
+    each element may become the object of cyber-attacks, leading the physical system into undesirable states and critical malfunctions
+    that could lead to potential catastrophic consequences, thus impairing the system safety. So, it is necessary to analyze the
+    cyber-physical threats and the impact of cross-domain attacks on UAVs, which is also an important research direction in the field of
+    CPS security. We plan to provide the information required to experimentally evaluate the robustness of the UAS against
+    accidental and malicious faults. Starting from the most likely fault modes and the most relevant attack surfaces (exploiting UAV’s
+    vulnerabilities), we will investigate the operating condition of the UAV at its operational boundary, i.e., we will investigate if the UAV
+    is still able to provide a correct service under the considered accidental faults and attacks. The analysis will include failures of
+    the visual camera, the gyroscope, the oscillometer, and so on. As attacks, we will include at least adversarial patches (i.e., attacks
+    towards visual cameras in the physical world) and disruption of wireless communications. When the injection of failures and attacks
+    directly into the real prototype is not possible, simulations will be performed using the available datasets and simulators. Also, the
+    presence of multiple drones in the same area can cause additional risks (e.g., colliding drones). So, the proposed approach seeks to
+    begin providing an adaptable framework for analyses that allows rapid assurance of operational safety considering different
+    scenarios in terms of combinations of the variability aspects of the system, like combinations of environment conditions, operational
+    conditions, available communication networks, number of UAVs.
+    </p>
+    <br><br>
+    <h4>T3.3 – [UNIPG; B6-B12] Routing Algorithms for BVLoS in urban mission</h4>
+    <p class="text-left">
+    In this task, we study efficient routing and scheduling algorithms suitable for an urban BVLoS environment. Differently from the
+    previous suburban context of T2.3, here the algorithms should also take into account the ground characteristics, extending the
+    multi-layer framework with, for example, the layer of the population density and the sheltering factor, as well as a layer for dynamic
+    events. The routing algorithms will consider the strategies proposed in T3.1 (to adapt the QoS to the applications) and in T3.2 (for a
+    reliable and resilient flight). In fact, due to the dynamicity of the events, the risk layers can even change over time (e.g., in localized
+    fairs the concentration of people can significantly increase) or in case of exceptional events (e.g., earthquakes or tornadoes that
+    create new obstacles). Therefore, these algorithms must also be able to recompute the drone’s path on-the-fly. In an urban
+    environment, we also expect to deal with multiple drones that perform different tasks at the same time. This aspect introduces the
+    problem that two or more UAVs can collide together during their flight. Therefore, we need to study and devise efficient and resilient
+    scheduling algorithms in order to guarantee that multiple UAVs do not fly in the same area or the same corridor. An approach to
+    solve this problem can consider the tessellation of the 3D space in cubes, and then assign a cube to each drone with some policies.
+    Along corridors the strategy could be to let the drones fly at different heights, avoiding so to occupy the same horizontal line.
+    However, in the extreme case that too many UAVs are flying in the same area, they should be opportunely re-routed on different,
+    and possibly longer, paths, satisfying the required application constraints. This would introduce feasibility issues since UAVs are
+    energy-constrained, and hence the energy required for the new path could not be sufficient. If this happens, the drones should be
+    able to perform a safe landing on intermediate checkpoints. Methodologically, whenever possible, we will model the problems that
+    we face as optimization problems. We will study their computational complexity, and if they are tractable, we will propose optimal
+    solutions, otherwise, approximated solutions and heuristics will be devised.
+    </p>
+    <br><br>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-3 fixed-bottom">
+  <p><b>&copy; 2024 BREADCRUMBS - Building up Robust and Efficient routing Algorithms for Drones by integrating Connectivity and Risk awareness in a
+Urban air Mobility Bvlos Scenario. All rights reserved.</b></p>
+</footer>
+
+<!-- Bootstrap JS and jQuery (required for Bootstrap functionality) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
