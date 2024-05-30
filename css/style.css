@@ -51,9 +51,9 @@ nav{
 }
 
 .university-card {
-  border: 1px solid #dee2e6;
+  /* border: 1px solid #dee2e6; */
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .university-card img {
@@ -73,6 +73,19 @@ nav{
 #unipg-con, #unifi-con, #polito-con{
     max-width: 250px;
     height: auto;
+}
+
+@media (max-width:960px){
+    #state-of-art, #coordinators, #list-of-publication, #detailed-project-last, #universities-involved, #university, #detailed-project{
+        margin-bottom: 300px;
+    }
+    #unipg-con, #unifi-con, #polito-con{
+        display: none;
+    }
+    #universities-involved{
+        font-size: 22px;
+        text-align: left;
+    }
 }
 
 #universities-involved, #university{
