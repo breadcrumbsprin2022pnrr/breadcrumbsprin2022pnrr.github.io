@@ -86,6 +86,9 @@ nav{
         font-size: 22px;
         text-align: left;
     }
+    footer{
+        font-size: 10px;
+    }
 }
 
 #universities-involved, #university{
